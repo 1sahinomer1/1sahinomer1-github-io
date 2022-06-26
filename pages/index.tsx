@@ -5,11 +5,11 @@ import {
   Linkedin,
   Medium,
   Mail,
-} from 'components/Icons';
-import type { NextPage } from 'next';
-import Head from 'next/head';
+} from "components/Icons";
+import type { NextPage } from "next";
+import Head from "next/head";
 
-import * as S from 'styles/Pages/index';
+import * as S from "styles/Pages/index";
 
 interface HomeProps {
   theme: string;
@@ -32,8 +32,7 @@ const Home: NextPage<HomeProps> = ({ theme }) => {
             <S.Title>Hello I am Ömer</S.Title>
             <S.Info>
               I am a frontend developer who is passionate about coding I am
-              interested in the frontend side. I am currently enrolled at
-              Suleyman Demirel University for four years.
+              interested in the frontend side.
             </S.Info>
             <S.Info>
               I write blog posts whenever I get the chance. You can read my
@@ -46,22 +45,22 @@ const Home: NextPage<HomeProps> = ({ theme }) => {
         </S.InfoMain>
         <S.Links>
           <S.StyledLink href="https://github.com/1sahinomer1">
-            <Github fill={theme === 'dark'} />
+            <Github fill={theme === "dark"} />
           </S.StyledLink>
           <S.StyledLink href="https://www.linkedin.com/in/omersahin1/">
-            <Linkedin fill={theme === 'dark'} />
+            <Linkedin fill={theme === "dark"} />
           </S.StyledLink>
           <S.StyledLink href="https://medium.com/@1sahinomer1">
-            <Medium fill={theme === 'dark'} />
+            <Medium fill={theme === "dark"} />
           </S.StyledLink>
           <S.StyledLink href="https://www.instagram.com/shnomr/">
-            <Instagram fill={theme === 'dark'} />
+            <Instagram fill={theme === "dark"} />
           </S.StyledLink>
           <S.StyledLink href="https://twitter.com/1sahinomer1">
-            <Twitter fill={theme === 'dark'} />
+            <Twitter fill={theme === "dark"} />
           </S.StyledLink>
           <S.StyledLink href="mailto:1sahinomer1@gmail.com">
-            <Mail fill={theme === 'dark'} />
+            <Mail fill={theme === "dark"} />
           </S.StyledLink>
           <S.StyledLink href="/omerSahinCV.pdf">My Resume</S.StyledLink>
         </S.Links>
